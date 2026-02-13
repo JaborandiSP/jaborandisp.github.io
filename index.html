@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maeda</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 40px;
+    }
+
+    .logo {
+      width: 180px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #22c55e;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #16a34a;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .logo {
+        width: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="images/logomaeda.png" alt="Logo Maeda" class="logo">
+    <h1>Bem-vindo</h1>
+    <p>Uma organização focada em inovação, comunidade e soluções digitais.</p>
+    <a href="#" class="btn">Saiba Mais</a>
+
+    <footer>
+      © 2026 Maeda. Todos os direitos reservados.
+    </footer>
+  </div>
+
+</body>
+</html>
