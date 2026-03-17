@@ -12,93 +12,70 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6493068451182223"
      crossorigin="anonymous">
 </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maeda</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página Inicial</title>
+<style>
     body {
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 600px;
-      padding: 40px;
-    }
-
-    .logo {
-      width: 180px;
-      margin-bottom: 30px;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-      letter-spacing: 1px;
+        margin-bottom: 40px;
+        color: #0E2841;
+        text-align: center;
     }
 
-    p {
-      font-size: 1.1rem;
-      opacity: 0.85;
-      margin-bottom: 30px;
+    .botao {
+        display: block;
+        width: 200px;
+        padding: 15px;
+        margin: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #2276AA;
+        border: none;
+        border-radius: 6px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        cursor: pointer;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 12px 28px;
-      background: #22c55e;
-      color: #0f172a;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: 0.3s ease;
+    .botao:hover {
+        background-color: #0E2841;
     }
 
-    .btn:hover {
-      background: #16a34a;
-      transform: scale(1.05);
+    /* Para telas menores */
+    @media (max-width: 400px) {
+        .botao {
+            width: 150px;
+            font-size: 16px;
+            padding: 12px;
+        }
     }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      opacity: 0.6;
-    }
-
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 2rem;
-      }
-      .logo {
-        width: 140px;
-      }
-    }
-  </style>
+</style>
 </head>
 <body>
 
-  <div class="container">
-    <img src="images/logomaeda.png" alt="Logo Maeda" class="logo">
-    <h1>Bem-vindo</h1>
-    <p>Uma organização focada em inovação, comunidade e soluções digitais.</p>
-    <a href="https://wa.me/5517997023603" class="btn">Entre em contato</a>
+<h1>Bem-vindo</h1>
 
-    <footer>
-      © 2026 Maeda. Todos os direitos reservados.
-    </footer>
-  </div>
+<!-- Botões -->
+<a class="botao" href="cep/index.html">CEP</a>
+<a class="botao" href="onibus/index.html">Ônibus</a>
+
+<!-- Exemplo para adicionar mais botões:
+<a class="botao" href="outro-link.html">Outro</a>
+-->
 
 </body>
 </html>
