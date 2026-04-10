@@ -25,7 +25,9 @@
       "comu": "https://chat.whatsapp.com/GR7UCWYw8ZEFBJXpqCYDmm"
     };
 
-    const path = window.location.pathname.replace("/", "");
+    const path = window.location.pathname
+      .replace(/^\/|\/$/g, "")
+      .toLowerCase();
 
     if (links[path]) {
       window.location.href = links[path];
